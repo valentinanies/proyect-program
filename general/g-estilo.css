@@ -1,0 +1,13 @@
+.logo{
+  width: 125px;
+}
+.main-footer ul {
+  list-style-type: none;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: 0px;
+}
+/* hola */
