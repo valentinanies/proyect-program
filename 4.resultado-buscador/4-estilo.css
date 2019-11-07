@@ -13,12 +13,10 @@
 }
 .Nies{
   padding-top: 20px;
-  padding-left: 13px;
-
+  padding-left: 13px
 }
 .Clara{
   padding-left:19px;
-
 }
 
 .logofooter {
@@ -28,18 +26,4 @@
     padding-right: 16px;
     padding-top: 13px;
     margin-left: 55px;
-
-
-}
-.resultados {
-  text-align: center;
-  padding-bottom: 9px;
-  font-size: 20px;
-}
-
-.greys {
-  padding-left: 9px;
-  font-size: 18px;
-  font-weight: bold;
-  padding-bottom: 9px;
 }
