@@ -1,5 +1,5 @@
 window.onload = function() {
-  var queBuscoElUsuario = new URLSearchParams(location.search).get("buscador");
+  var queBuscoElUsuario = new URLSearchParams(location.search).get("busqueda");
 
   console.log(queBuscoElUsuario);
 
@@ -20,13 +20,16 @@ window.onload = function() {
       var arrayDeSeries = objetoLiteralRespuesta.results
       var li = ""
       for (var i = 0; i < arrayDeSeries.length; i++) {
+        if(arrayDeSeries[i].poster_path != null){
+          li = '<li>'
+          li +=     '<img src="'+ URL_IMAGEN_FIJA + arrayDeSeries[i].poster_path + '" alt="">'
+          li +=    '<div class="uk-position-center uk-panel"><h1>'+arrayDeSeries[i].name+'</h1></div>'
+          li += '</li>'
+          ul.innerHTML += li
+        }
 
-        li = '<li>'
-        li +=    '<div class="uk-card uk-card-default uk-card-body">' + arrayDeSeries[i].name + '</div>'
-        li +=     '<img src="'+ URL_IMAGEN_FIJA + arrayDeSeries[i].poster_path + '" alt="">'
-        li += '</li>'
 
-        ul.innerHTML += li
+
       }
 
 
