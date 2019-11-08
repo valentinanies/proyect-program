@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <link rel="stylesheet" href="2-estilo.css">
-  <head>
-    <meta charset="utf-8">
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
-    <title></title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
+  <title></title>
+</head>
+<body>
 
 
-    <header>
+  <header>
     <nav class="uk-navbar-container" uk-navbar>
 
       <div class="uk-navbar-left">
@@ -22,74 +22,70 @@
           <img src="../logo.png" alt="">
         </div>
 
-          <ul class="uk-navbar-nav">
-              <li class="uk-active"><a href="#">Inicio</a></li>
-              <li>
-                  <a href="#">Genero</a>
-                  <div class="uk-navbar-dropdown">
-                      <ul class="uk-nav uk-navbar-dropdown-nav">
-                          <li class="uk-active"><a href="#">Todos los generos</a></li>
-                          <li><a href="#">Acción</a></li>
-                          <li><a href="#">Ciencia Ficción</a></li>
-                          <li><a href="#">Comedia</a></li>
-                          <li><a href="#">Documental</a></li>
-                          <li><a href="#">Drama</a></li>
-                          <li><a href="#">Romance</a></li>
-                          <li><a href="#">Suspenso</a></li>
-                          <li><a href="#">Terror</a></li>
-                      </ul>
-                  </div>
-              </li>
-              <li><a href="#">Peliculas</a></li>
-              <li><a href="#">Series</a></li>
-          </ul>
+        <ul class="uk-navbar-nav">
+          <li class="uk-active"><a href="#">Inicio</a></li>
+          <li>
+            <a href="#">Genero</a>
+            <div class="uk-navbar-dropdown">
+              <ul class="uk-nav uk-navbar-dropdown-nav">
+                <li class="uk-active"><a href="#">Todos los generos</a></li>
+                <li><a href="#">Acción</a></li>
+                <li><a href="#">Ciencia Ficción</a></li>
+                <li><a href="#">Comedia</a></li>
+                <li><a href="#">Documental</a></li>
+                <li><a href="#">Drama</a></li>
+                <li><a href="#">Romance</a></li>
+                <li><a href="#">Suspenso</a></li>
+                <li><a href="#">Terror</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Peliculas</a></li>
+          <li><a href="#">Series</a></li>
+        </ul>
 
       </div>
-        <div class="uk-navbar-right">
-        <div class="uk-margin">
-          <form class="uk-search uk-search-default">
-            <span uk-search-icon></span>
-            <input class="uk-search-input" type="search" placeholder="Buscar...">
-          </form>
-        </div>
+      <div class="uk-navbar-right">
+      <div class="uk-margin">
+        <form class="uk-search uk-search-default" action="../4.resultado-buscador/4-index.html">
+          <span uk-search-icon></span>
+          <input name="buscador" class="uk-search-input" type="search" placeholder="Buscar...">
+        </form>
       </div>
+    </div>
 
     </nav>
-    </header>
- <h1 class="uk-heading-divider">GÉNEROS</h1>
+  </header>
+  <h1 class="uk-heading-divider">GÉNEROS</h1>
 
-    <div class="uk-flex">
+  <div class="uk-flex">
     <div class="CAJITAS">TERROR</div>
     <div class="CAJITAS">ACCIÓN</div>
     <div class="CAJITAS">CIENCIA FICCIÓN</div>
-</div>
+  </div>
 
-<div class="uk-flex">
+  <div class="uk-flex">
     <div class="CAJITAS">ROMÁNTICAS</div>
     <div class="CAJITAS">COMEDIAS</div>
     <div class="CAJITAS">DOCUMENTAL</div>
-</div>
+  </div>
 
-<div class="uk-flex">
+  <div class="uk-flex">
     <div class="CAJITAS">DRAMA</div>
     <div class="CAJITAS">SUSPENSO</div>
     <div class="CAJITAS">INFANTILES</div>
-</div>
+  </div>
+
+  <div class="footer">
+    <p class="Nies">Valentina Nies</p>
+    <p class="Clara">Clara Benadiba</p>
+
+    <a href="https://www.facebook.com/" uk-icon="facebook"></a>
+    <a href="https://www.instagram.com/" uk-icon="instagram"></a>
+    <img class="logofooter"src="../logo.png" alt="">
+
+  </div>
 
 
-
-
-    <!-- EL FOOTER QUE HAY QUE ARREGLAR
-    <div class="footer">
-      <p class="Nies">Valentina Nies</p>
-      <p class="Clara">Clara Benadiba</p>
-
-       <a href="https://www.facebook.com/" uk-icon="facebook"></a>
-      <a href="https://www.instagram.com/" uk-icon="instagram"></a>
-      <img class="logofooter"src="../logo.png" alt="">
-
-    </div>-->
-
-
-  </body>
+</body>
 </html>
