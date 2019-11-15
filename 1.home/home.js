@@ -21,9 +21,11 @@ fetch(URL_POPULARES)
     for (var i = 0; i < arrayDeSeries.length; i++) {
 
       li = '<li class="contenedorDeSerie">'
+      li += '<a href=../5.detalle/5-index.html?numeroDeSerie=' + arrayDeSeries[i].id + '>'
       li +=    '<p class="tituloDeSerie">' + arrayDeSeries[i].name + '</p>'
       li +=     '<img src="'+ URL_IMAGEN_FIJA + arrayDeSeries[i].poster_path + '" alt="">'
       li +=    '<p class="vote">' + arrayDeSeries[i].vote_average + '</p>'
+      li += '</a>'
       li += '</li>'
 
       ul.innerHTML += li
@@ -73,9 +75,11 @@ fetch(URL_POPULARES)
       for (var i = 0; i < arrayDeSeries.length; i++) {
 
         li = '<li class="contenedorDeSerie">'
+        li += '<a href=../5.detalle/5-index.html?numeroDeSerie=' + arrayDeSeries[i].id + '>'
         li +=    '<p class="tituloDeSerie">' + arrayDeSeries[i].name + '</p>'
         li +=     '<img src="'+ URL_IMAGEN_FIJA + arrayDeSeries[i].poster_path + '" alt="">'
         li +=    '<p class="vote">' + arrayDeSeries[i].vote_average + '</p>'
+        li += '</a>'
         li += '</li>'
 
         ul.innerHTML += li
@@ -128,9 +132,11 @@ fetch(URL_POPULARES)
       for (var i = 0; i < arrayDeSeries.length; i++) {
 
         li = '<li class="contenedorDeSerie">'
+        li += '<a href=../5.detalle/5-index.html?numeroDeSerie=' + arrayDeSeries[i].id + '>'
         li +=    '<p class="tituloDeSerie">' + arrayDeSeries[i].name + '</p>'
         li +=     '<img src="'+ URL_IMAGEN_FIJA + arrayDeSeries[i].poster_path + '" alt="">'
         li +=    '<p class="vote">' + arrayDeSeries[i].vote_average + '</p>'
+        li += '</a>'
         li += '</li>'
 
         ul.innerHTML += li
@@ -165,6 +171,59 @@ fetch(URL_POPULARES)
 
     });
 
+    var URL_PUNTAJE = "https://api.themoviedb.org/3/tv/top_rated?api_key="+ API_KEY +"&page=1"
 
+    fetch(URL_PUNTAJE)
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(objetoLiteralRespuesta) {
+        console.log(objetoLiteralRespuesta);
+
+        // capturar el UL que va a contener los LI (series)
+        var ul = document.querySelector("#carruselhome")
+        var arrayDeSeries = objetoLiteralRespuesta.results
+        var li = ""
+        for (var i = 0; i < arrayDeSeries.length; i++) {
+
+          li = '<li class="contenedorDeSerie">'
+          li += '<a href=../5.detalle/5-index.html?numeroDeSerie=' + arrayDeSeries[i].id + '>'
+          li +=    '<p class="tituloDeSerie">' + arrayDeSeries[i].name + '</p>'
+          li +=     '<img src="'+ URL_IMAGEN_FIJA + arrayDeSeries[i].poster_path + '" alt="">'
+          li +=    '<p class="vote">' + arrayDeSeries[i].vote_average + '</p>'
+          li += '</a>'
+          li += '</li>'
+
+          ul.innerHTML += li
+        }
+
+        var contenedoresDeSeriesPuntaje = document.querySelectorAll("#puntaje .contenedorDeSerie")
+
+        for (var i = 0; i < contenedoresDeSeriesPuntaje.length; i++) {
+          contenedoresDeSeriesPuntaje[i].onmouseover = function() {
+            var titulo = this.querySelector(".tituloDeSerie");
+            titulo.style.display = "block";
+            titulo.classList.add("uk-animation-slide-bottom")
+
+            var vote = this.querySelector(".vote");
+            vote.style.display = "block";
+            vote.classList.add("uk-animation-slide-bottom")
+
+          }
+
+          contenedoresDeSeriesPuntaje[i].onmouseout = function() {
+            var titulo = this.querySelector(".tituloDeSerie");
+            titulo.style.display = "none";
+            titulo.classList.remove("uk-animation-slide-bottom")
+
+            var vote = this.querySelector(".vote");
+            vote.style.display = "none";
+            vote.classList.add("uk-animation-slide-bottom")
+
+          }
+
+        }
+
+      });
 
 })

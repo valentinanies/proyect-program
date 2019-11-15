@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <link rel="stylesheet" href="5-estilo.css">
-  <head>
-    <meta charset="utf-8">
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
-    <title></title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
+  <title></title>
+  <script src="detalle.js" charset="utf-8"></script>
+</head>
+<body>
 
-    <header>
+  <header>
     <nav class="uk-navbar-container" uk-navbar>
 
       <div class="uk-navbar-left">
@@ -21,80 +22,79 @@
           <img src="../logo.png" alt="">
         </div>
 
-          <ul class="uk-navbar-nav">
-              <li class="uk-active"><a href="#">Inicio</a></li>
-              <li>
-                  <a href="#">Genero</a>
-                  <div class="uk-navbar-dropdown">
-                      <ul class="uk-nav uk-navbar-dropdown-nav">
-                          <li class="uk-active"><a href="#">Todos los generos</a></li>
-                          <li><a href="#">Acción</a></li>
-                          <li><a href="#">Ciencia Ficción</a></li>
-                          <li><a href="#">Comedia</a></li>
-                          <li><a href="#">Documental</a></li>
-                          <li><a href="#">Drama</a></li>
-                          <li><a href="#">Romance</a></li>
-                          <li><a href="#">Suspenso</a></li>
-                          <li><a href="#">Terror</a></li>
-                      </ul>
-                  </div>
-              </li>
-              <li><a href="#">Series</a></li>
-          </ul>
+        <ul class="uk-navbar-nav">
+          <li class="uk-active"><a href="../1.home/1-index.html">Inicio</a></li>
+          <li>
+            <a href="../2.listado-de-generos/2-index.html">Genero</a>
+            <div class="uk-navbar-dropdown">
+              <ul class="uk-nav uk-navbar-dropdown-nav">
+                <li class="uk-active"><a href="../2.listado-de-generos/2-index.html">Todos los generos</a></li>
+                <li><a href="#">Acción</a></li>
+                <li><a href="#">Ciencia Ficción</a></li>
+                <li><a href="#">Comedia</a></li>
+                <li><a href="#">Documental</a></li>
+                <li><a href="#">Drama</a></li>
+                <li><a href="#">Romance</a></li>
+                <li><a href="#">Suspenso</a></li>
+                <li><a href="#">Terror</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Series</a></li>
+        </ul>
 
       </div>
       <div class="uk-navbar-right">
-      <div class="uk-margin">
-        <form class="uk-search uk-search-default" action="../4.resultado-buscador/4-index.html">
-          <span uk-search-icon></span>
-          <input name="buscador" class="uk-search-input" type="search" placeholder="Buscar...">
-        </form>
-      </div>
-    </div>
-
-  </nav>
-    </header>
-
-
-
-
-
-
-
-
-
-
-
-    <article class="uk-article">
-
-        <h1 class="uk-article-title"><a class="uk-link-reset" href="">The Joker</a></h1>
-
-        <p class="uk-article-meta">Written by <a href="#">Super User</a> on 12 April 2012. Posted in <a href="#">Blog</a></p>
-
-        <p class="uk-text-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <div class="uk-grid-small uk-child-width-auto" uk-grid>
-            <div>
-                <a class="uk-button uk-button-text" href="#">Información</a>
-            </div>
-            <div>
-                <a class="uk-button uk-button-text" <span class="uk-margin-small-right" uk-icon="video-camera"></span></a>
-            </div>
+        <div class="uk-margin">
+          <form class="uk-search uk-search-default" action="../4.resultado-buscador/4-index.html">
+            <span uk-search-icon></span>
+            <input name="buscador" class="uk-search-input" type="search" placeholder="Buscar...">
+          </form>
         </div>
+      </div>
 
-    </article>
+    </nav>
+  </header>
 
-    <div class="footer">
-      <p class="Nies">Valentina Nies</p>
-      <p class="Clara">Clara Benadiba</p>
 
-      <a href="https://www.facebook.com/" uk-icon="facebook"></a>
-      <a href="https://www.instagram.com/" uk-icon="instagram"></a>
-      <img class="logofooter"src="../logo.png" alt="">
 
-    </div>
 
-  </body>
+<div class="uk-column-1-2 uk-column-divider">
+    <p><div id="detalle">
+      <h1 class="uk-article-title" id="serieName">The Joker</h1>
+      <p class="uk-article-meta">Written by <span id="serieAuthor"></span> on <span id="serieDate"></span></p>
+      <p id="serieOverview"></p>
+      <div class="uk-grid-small uk-child-width-auto" uk-grid>
+        <div>
+          <a class="uk-button uk-button-text" href="#">Información</a>
+        </div>
+        <div>
+          <a class="uk-button uk-button-text" <span class="uk-margin-small-right" uk-icon="video-camera"></span></a>
+        </div>
+      </div>
+      </div></p>
+
+    <p><div id="Poster">
+      <img id="seriePoster" src="http://image.tmdb.org/t/p/original" alt="">
+    </div></p>
+
+</div>
+
+
+
+
+
+
+
+  <div class="footer">
+    <p class="Nies">Valentina Nies</p>
+    <p class="Clara">Clara Benadiba</p>
+
+    <a href="https://www.facebook.com/" uk-icon="facebook"></a>
+    <a href="https://www.instagram.com/" uk-icon="instagram"></a>
+    <img class="logofooter"src="../logo.png" alt="">
+
+  </div>
+
+</body>
 </html>
