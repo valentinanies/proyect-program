@@ -8,6 +8,7 @@
   <!-- UIkit JS -->
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
+  <script src="generos.js" charset="utf-8"></script>
   <title></title>
 </head>
 <body>
@@ -26,19 +27,7 @@
           <li class="uk-active"><a href="../1.home/1-index.html">Inicio</a></li>
           <li>
             <a href="../2.listado-de-generos/2-index.html">Genero</a>
-            <div class="uk-navbar-dropdown">
-              <ul class="uk-nav uk-navbar-dropdown-nav">
-                <li class="uk-active"><a href="../2.listado-de-generos/2-index.html">Todos los generos</a></li>
-                <li><a href="#">Acción</a></li>
-                <li><a href="#">Ciencia Ficción</a></li>
-                <li><a href="#">Comedia</a></li>
-                <li><a href="#">Documental</a></li>
-                <li><a href="#">Drama</a></li>
-                <li><a href="#">Romance</a></li>
-                <li><a href="#">Suspenso</a></li>
-                <li><a href="#">Terror</a></li>
-              </ul>
-            </div>
+
           </li>
           <li><a href="#">Series</a></li>
         </ul>
@@ -57,22 +46,11 @@
   </header>
   <h1 class="uk-heading-divider">GÉNEROS</h1>
 
-  <div class="uk-flex">
-    <div class="CAJITAS">TERROR</div>
-    <div class="CAJITAS">ACCIÓN</div>
-    <div class="CAJITAS">CIENCIA FICCIÓN</div>
-  </div>
+  <div class="uk-flex contenedor-cajitas">
+    <div class="contenedorGeneros uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true">
 
-  <div class="uk-flex">
-    <div class="CAJITAS">ROMÁNTICAS</div>
-    <div class="CAJITAS">COMEDIAS</div>
-    <div class="CAJITAS">DOCUMENTAL</div>
-  </div>
+    </div>
 
-  <div class="uk-flex">
-    <div class="CAJITAS">DRAMA</div>
-    <div class="CAJITAS">SUSPENSO</div>
-    <div class="CAJITAS">INFANTILES</div>
   </div>
 
   <div class="footer">

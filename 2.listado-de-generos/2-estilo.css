@@ -40,16 +40,21 @@ FINAL FOOTER
 
 
 .CAJITAS{
-  width: 300px;
-  height: 300px;
+  width: 25%;
   text-align: center;
   background-color: #D6D5D569;
   padding-top: 42px;
-  padding: 20px;
+  padding: 1%;
   margin: auto;
-  margin-top: 20px;
+  margin-bottom: 20px;
   font-weight: 300;
 }
+
+.contenedor-cajitas {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 h1.uk-heading-divider{
   text-align: center;
   font-weight: 200;

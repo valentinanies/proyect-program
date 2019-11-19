@@ -56,7 +56,7 @@ FINAL FOOTER
     display: none;
 }
 
-.vote {
+/*.vote {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -64,6 +64,7 @@ FINAL FOOTER
   color: white;
   display: none;
 }
+*/
 
 .contenedorDeSerie {
   position: relative;
