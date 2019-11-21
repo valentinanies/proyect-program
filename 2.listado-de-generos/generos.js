@@ -21,7 +21,7 @@ window.onload = function() {
       for (var i = 0; i < arrayGeneros.length; i++) {
         console.log(arrayGeneros[i].name);
 
-        var div = '<a href="../3.orden-por-genero/3-index.html?idGenero='+ arrayGeneros[i].id +'&' + NOSE QUE NOMBRE DE VARIABLE VA + arrayGeneros[i].name"> <div>'
+        var div = '<a href="../3.orden-por-genero/3-index.html?idGenero='+ contenedorGeneros +'&' + arrayGeneros[i].id"> <div>'
         div += '<div class="uk-card uk-card-default uk-card-body">'
         div += '<h3 class="uk-card-title">' + arrayGeneros[i].name + '</h3>'
         div += '</div>'
