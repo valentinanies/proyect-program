@@ -16,6 +16,25 @@ window.onload = function(){
     })
     .then(function(data){
       console.log(data);
+
+      var div = document.querySelector(".resultadosDiv")
+      var arrayGeneros = data.results
+      var li = ""
+        for (var i = 0; i < arrayGeneros.length; i++) {
+          arrayGeneros[i]
+          li = '<div class="serie">'
+          li += '<a href=../5.detalle/5-index.html?numeroDeSerie=' + arrayGeneros[i].id + '>'
+          li +=    '<p class="tituloDeSerie">' + arrayGeneros[i].name + '</p>'
+          li +=     '<img src="'+ URL_IMAGEN_FIJA + arrayGeneros[i].poster_path + '" alt="">'
+          li += '</a>'
+          li += '</div>'
+
+          div.innerHTML += li
+
+
+        }
+
+
     })
     .catch(function(error){
       console.log(error);

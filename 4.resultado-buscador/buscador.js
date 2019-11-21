@@ -19,19 +19,42 @@ window.onload = function() {
       var ul = document.querySelector("#buscando")
       var arrayDeSeries = objetoLiteralRespuesta.results
       var li = ""
+      var h2 = document.querySelector('h2.resultado')
+      if (arrayDeSeries == 0) {
+        h2.innerText += "no encontre resultados"
+
+        console.log("no encontre resultados");
+      }else {
+
+
       for (var i = 0; i < arrayDeSeries.length; i++) {
+
+
+
         if(arrayDeSeries[i].poster_path != null){
-          li = '<li>'
+          //li = '<li>'
+          //li +=     '<img src="'+ URL_IMAGEN_FIJA + arrayDeSeries[i].poster_path + '" alt="">'
+          //li += '</li>'
+          // ul.innerHTML += li
+          h2.innerText = queBuscoElUsuario
+          li = '<li class="contenedorDeSerie">'
+          li += '<h1 class="resultado">' + arrayDeSeries[i].name + '</h1>'
+          li += '<a href=../5.detalle/5-index.html?numeroDeSerie=' + arrayDeSeries[i].id + '>'
+          li +=    '<p class="tituloDeSerie">' + arrayDeSeries[i].name + '</p>'
           li +=     '<img src="'+ URL_IMAGEN_FIJA + arrayDeSeries[i].poster_path + '" alt="">'
-          li +=    '<div class="uk-position-center uk-panel"><h1>'+arrayDeSeries[i].name+'</h1></div>'
+          li +=    '<p class="vote">' + arrayDeSeries[i].vote_average + '</p>'
+          li += '</a>'
           li += '</li>'
+
           ul.innerHTML += li
         }
+        //var ul = document.querySelector(".resultados")
+        //var arrayDeBusqueda = objetoLiteralRespuesta.results
 
 
 
       }
+      }
+})
 
-
-    });
-}
+    };

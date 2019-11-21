@@ -1,7 +1,12 @@
 .logo{
   width: 125px;
 }
-
+.generitos {
+  list-style-type: none;
+  background-color: black;
+  padding-top: 5%;
+  text-align: center;
+}
 /* ================
 INICIO FOOTER
 ================ */

@@ -1,3 +1,7 @@
+.resultadosDiv{
+  list-style-type: none
+}
+
 .logo{
   width: 125px;
 }
@@ -5,7 +9,6 @@
 #genero {
   color: black;
   text-align: left;
-
 }
 /* ================
 INICIO FOOTER
