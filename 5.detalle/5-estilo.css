@@ -46,10 +46,11 @@ img.logofooter {
   font-variant:all-petite-caps;
   font-stretch: semi-condensed;
   padding-bottom: 2%;
-  background-color: #f8f8f8;
+  background-color: #2b352fed;
 background-blend-mode: luminosity;
 background-position: center;
 margin-left: 5%;
+color: ghostwhite;
 }
 
 

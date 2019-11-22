@@ -3,10 +3,21 @@
 }
 .generitos {
   list-style-type: none;
-  background-color: black;
+  background-color: #0b2f18;
   padding-top: 5%;
   text-align: center;
+  font-variant: all-small-caps;
+  font-weight: 350;
+  font-stretch: extra-condensed;
+  margin:0 auto;
 }
+
+#divider {
+  padding-bottom: calc(7px);
+  border-bottom: calc(4px) solid #65d57599;
+}
+
+
 /* ================
 INICIO FOOTER
 ================ */
