@@ -39,7 +39,50 @@ img.logofooter {
   margin-left: 30px;
 }
 
-#seriePoster
+#serieName {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-variant:all-petite-caps;
+  font-stretch: semi-condensed;
+  padding-bottom: 2%;
+  background-color: #f8f8f8;
+background-blend-mode: luminosity;
+background-position: center;
+}
+
+
+.detalles {
+    font-weight: normal;
+    padding-left: 1.5%;
+    font-variant:normal;
+    font-size: large;
+    padding-bottom: -5%;
+
+
+}
+
+.detalle {
+align-content: center;
+margin: 0 auto;
+}
+
+#serieOverview {
+
+  font-variant:normal;
+  padding-left: 1.5%;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+#info{
+  padding-left: 5.5%;}
+}
+
+
+}
+
 /* ================
 FINAL FOOTER
 ================ */

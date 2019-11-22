@@ -10,6 +10,14 @@
   color: black;
   text-align: left;
 }
+p.tituloDeSerie {
+  color: dimgrey;
+      font-variant: all-small-caps;
+      font-weight: bolder;
+      font-size: 17px;
+      background-color: #f8f8f8;
+
+}
 /* ================
 INICIO FOOTER
 ================ */
