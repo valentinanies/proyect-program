@@ -64,6 +64,7 @@ var ul = document.querySelector("#recomendaciones").addEventListener('click',fun
 
 document.querySelector("#trailer").addEventListener('click',function(){
   fecth("https://api.themoviedb.org/3/tv/" +  + "/videos?api_key=" + API_KEY)
+  document.querySelector('query').src = youy + video.key
 })
 
 
