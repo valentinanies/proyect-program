@@ -48,23 +48,27 @@ FINAL FOOTER
 ================ */
 
 .tituloDeSerie {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    display: none;
+  background-color: rgba(101, 213, 117, 0.58);
+      color: #484545;
+      display: none;
+      margin: 0 auto;
+      font-size: large;
+      font-variant: all-small-caps;
+      font-weight: 500;
 }
 
-/*.vote {
+.vote {
   position: absolute;
   bottom: 0;
   width: 100%;
   background-color: rgba(0,0,0,0.5);
   color: white;
   display: none;
+  margin:0 auto;
+  width: 268px;
+
 }
-*/
+
 
 .contenedorDeSerie {
   position: relative;
