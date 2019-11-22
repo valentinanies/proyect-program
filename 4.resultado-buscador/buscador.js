@@ -47,6 +47,8 @@ window.onload = function() {
           li += '</li>'
 
           ul.innerHTML += li
+        } else {
+          display: none;
         }
         //var ul = document.querySelector(".resultados")
         //var arrayDeBusqueda = objetoLiteralRespuesta.results

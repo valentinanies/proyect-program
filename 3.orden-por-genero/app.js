@@ -16,7 +16,6 @@ window.onload = function(){
     })
     .then(function(data){
       console.log(data);
-
       var div = document.querySelector(".resultadosDiv")
       var arrayGeneros = data.results
       var li = ""

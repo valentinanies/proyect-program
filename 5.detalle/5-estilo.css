@@ -6,6 +6,15 @@
   display: none;
 }
 
+.contenedorRecom{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 50%;
+  flex-direction: row;
+
+}
 
 /* ================
 INICIO FOOTER
